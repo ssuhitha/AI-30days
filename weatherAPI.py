@@ -1,4 +1,5 @@
 import requests
+import json
 
 API_KEY = "4b1d8bfc919e610edfb60a4a7a91d8f4"
 city="Vijayawada"
@@ -15,3 +16,13 @@ print(f"Weather: {data['weather'][0]['description']}")
 
 print(f"Humidity: {data['main']['humidity']}%")
 
+weather_data = {
+    "City" : data['name'],
+    "Temperature": data['main']['temp'],
+    "Weather": data['weather'][0]['description'],
+    "Humidity": data['main']['humidity']
+}
+
+with open("weather_output.json", "w") as f:
+    json.dump(weather_data, f, indent=4)
+print("Saved")
