@@ -6,7 +6,6 @@ A full stack AI-powered text summarizer built with React.js and Python FastAPI, 
 - Paste any text and get a concise bullet-point summary instantly
 - Two-panel layout — input on the left, summary on the right
 - Real-time character count
-- Soft aesthetic pink UI
 
 ## 🛠️ Tech Stack
 - **Frontend:** React.js, Vite, CSS3
